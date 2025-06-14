@@ -2,3 +2,5 @@ agno
 openai
 groq
 duckduckgo-search
+yfinance
+google-genai
