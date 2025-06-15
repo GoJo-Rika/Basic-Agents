@@ -4,3 +4,8 @@ groq
 duckduckgo-search
 yfinance
 google-genai
+pypdf
+lancedb
+tantivy
+pylance
+python-dotenv
