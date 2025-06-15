@@ -1,0 +1,19 @@
+[project]
+name = "basic-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "agno>=1.6.2",
+    "duckduckgo-search>=8.0.4",
+    "google-genai>=1.20.0",
+    "groq>=0.28.0",
+    "lancedb>=0.23.0",
+    "openai>=1.86.0",
+    "pylance>=0.29.0",
+    "pypdf>=5.6.0",
+    "python-dotenv>=1.1.0",
+    "tantivy>=0.24.0",
+    "yfinance>=0.2.63",
+]
