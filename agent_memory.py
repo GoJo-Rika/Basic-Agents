@@ -14,7 +14,7 @@ load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 
 agent = Agent(
-    model=Gemini(id="gemini-2.0-flash-lite"),
+    model=Gemini(id="gemini-2.0-flash"),
     description="You are a Thai cuisine expert!",
     instructions=[
         "Search your knowledge base for Thai recipes.",
@@ -33,6 +33,7 @@ agent = Agent(
     tools=[DuckDuckGoTools()],
     show_tool_calls=True,
     markdown=True,
+    reasoning=True,
 )
 
 # Comment out after the knowledge base is loaded
@@ -40,7 +41,7 @@ if agent.knowledge is not None:
     agent.knowledge.load()
 
 agent.print_response(
-    "How do I make chicken and galangal in coconut milk soup",
+    "How do I make Papaya Salad",
     stream=True,
 )
-agent.print_response("What is the history of Thai curry?", stream=True)
+agent.print_response("What is the history of Ramen?", stream=True)
